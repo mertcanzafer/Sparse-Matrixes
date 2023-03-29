@@ -80,7 +80,7 @@ void SparceMatrix::Transpose()
 
 	vector<vector<int>> Triplet;
 	Triplet.resize(terms + 1, vector<int>(3));
-	/*Sorting the triplet of a matrix*/
+	//Pushing information to Triplet vector from original matrix
 
 	Triplet[0][0] = rows;
 	Triplet[0][1] = cols;
