@@ -106,11 +106,7 @@ void SparceMatrix::Transpose()
 
 	/*Sorting the Triplet using sort()*/
 
-
-
 	sort(Triplet);
-
-
 
 	//Transpose operation
 
