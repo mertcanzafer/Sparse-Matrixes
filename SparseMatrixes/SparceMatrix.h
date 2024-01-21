@@ -27,11 +27,7 @@ private:
 	void generateTranspose(vector<vector<int>>& Triplet);
 
 public:
-
-
 	bool isSparceMatrix();
-
-
 	void generateMatrix();
 
 	SparceMatrix();
@@ -65,6 +61,9 @@ public:
 	bool checkIf_it_is_Transpose();
 
 	void sort(vector<vector<int>>& Triplet);
-
+	void printMsg()const
+	{
+		cout << "\nHello world\n";
+	}
 
 };
