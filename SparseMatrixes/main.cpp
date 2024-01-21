@@ -53,5 +53,7 @@ int main()
 	auto nanoint1 = duration_cast<nanoseconds>(t2 - t1);
 	cout << nanoint1.count() << "ns" << endl;
 
+	matrix.printMsg();
+
 	return 0;
 }

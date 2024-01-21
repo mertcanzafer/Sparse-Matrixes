@@ -61,6 +61,9 @@ public:
 	bool checkIf_it_is_Transpose();
 
 	void sort(vector<vector<int>>& Triplet);
-
+	void printMsg()const
+	{
+		cout << "\nHello world\n";
+	}
 
 };
