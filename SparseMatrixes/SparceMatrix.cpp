@@ -145,7 +145,18 @@ void SparceMatrix::PrintTransposeMatrix()
 
 bool SparceMatrix::checkIf_it_is_Transpose()
 {
-	return false;
+	for (int i = 0; i < vec.size(); i++)
+	{
+		for (int j = 0; j < vec[i].size(); j++)
+		{
+			if (vec[i][j] != vec[j][i])
+			{
+				return false;
+			}
+		}
+	}
+
+	return true;
 }
 
 void SparceMatrix::sort(vector<vector<int>>& Triplet)

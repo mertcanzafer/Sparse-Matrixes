@@ -11,16 +11,18 @@ using std::chrono::nanoseconds;
 void isTranspose(SparceMatrix& matrix) {
 
 	//Empty
-
-
+	if (matrix.checkIf_it_is_Transpose())
+	{
+		cout << "Yes it is transpose matrix\n";
+	}
+	else {
+		cout << "No it is not\n";
+	}
 }
-
 
 int main()
 {
 	SparceMatrix matrix;
-
-
 	matrix.generateMatrix();
 
 	matrix.print_matrix();
@@ -53,6 +55,7 @@ int main()
 	auto nanoint1 = duration_cast<nanoseconds>(t2 - t1);
 	cout << nanoint1.count() << "ns" << endl;
 
+	matrix.checkIf_it_is_Transpose();
 	matrix.printMsg();
 
 	return 0;
