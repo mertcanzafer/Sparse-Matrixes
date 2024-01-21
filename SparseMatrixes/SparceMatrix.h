@@ -27,11 +27,7 @@ private:
 	void generateTranspose(vector<vector<int>>& Triplet);
 
 public:
-
-
 	bool isSparceMatrix();
-
-
 	void generateMatrix();
 
 	SparceMatrix();
